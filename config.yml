@@ -4,21 +4,21 @@ title: Evgeny Roskach's blog
 paginate: 5
 theme: PaperMod
 
-relativeURLs: true
+relativeURLs: false
 
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
+# googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
   minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  # env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: genyrosk's blog
   description: "Evgeny Roskach - Blog"
   keywords: [Blog, Portfolio, Programming, Software, Engineering, Artificial Intelligence, AI, ML, Python, Rust, Evgeny Roskach]
