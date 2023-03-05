@@ -3,4 +3,4 @@
 - add google analytics
 - add bing analytics?
 
-- add profile image, greetinjg description
+- add profile image, greeting description
