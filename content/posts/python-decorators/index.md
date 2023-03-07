@@ -1,7 +1,7 @@
 ---
 title: "Learn Python Decorators"
 date: 2023-03-05T22:09:57+09:00
-draft: true
+draft: false
 categories:
 - python
 tags:
