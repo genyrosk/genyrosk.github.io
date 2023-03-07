@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>programming on Evgeny Roskach&#39;s blog</title>
+    <link>https://genyrosk.github.io/tags/programming/</link>
+    <description>Recent content in programming on Evgeny Roskach&#39;s blog</description>
+    <image>
+      <title>Evgeny Roskach&#39;s blog</title>
+      <url>https://avatars.githubusercontent.com/u/9571838?v4</url>
+      <link>https://avatars.githubusercontent.com/u/9571838?v4</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 05 Mar 2023 22:09:57 +0900</lastBuildDate><atom:link href="https://genyrosk.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learn Python Decorators</title>
+      <link>https://genyrosk.github.io/posts/python-decorators/</link>
+      <pubDate>Sun, 05 Mar 2023 22:09:57 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/posts/python-decorators/</guid>
+      <description>Originally posted on 2020-04-03
+Whether you are a beginner or an advanced programmer, there are many reasons why you should choose Python for your next coding project. Python is a scripted language with an almost stupidly simple syntax, it is easy to learn and powerful to use. One of the main reasons that I love people love Python is that it offers quite a few specific metaphors (a.k.a. paradigms) for doing certain things.</description>
+    </item>
+    
+    <item>
+      <title>Learn Python Generators</title>
+      <link>https://genyrosk.github.io/posts/python-generators/</link>
+      <pubDate>Sun, 05 Mar 2023 22:09:50 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/posts/python-generators/</guid>
+      <description>Originally posted on 2020-04-02
+There are already many very helpful tutorials on the subject out there. In this piece I wanted to share my own take and experience with python generators that I have gathered while working on production-level Python code. Introduction Whether you are familiar with Python generators or you have only heard a thing or two about them, allow me to summarise the 2 main properties of generator functions:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -9,6 +9,115 @@
       <url>https://avatars.githubusercontent.com/u/9571838?v4</url>
       <link>https://avatars.githubusercontent.com/u/9571838?v4</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://genyrosk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 05 Mar 2023 22:10:14 +0900</lastBuildDate><atom:link href="https://genyrosk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>context manager</title>
+      <link>https://genyrosk.github.io/tags/context-manager/</link>
+      <pubDate>Sun, 05 Mar 2023 22:10:14 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/tags/context-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>decorator</title>
+      <link>https://genyrosk.github.io/tags/decorator/</link>
+      <pubDate>Sun, 05 Mar 2023 22:10:14 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/tags/decorator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>generator</title>
+      <link>https://genyrosk.github.io/tags/generator/</link>
+      <pubDate>Sun, 05 Mar 2023 22:10:14 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/tags/generator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://genyrosk.github.io/tags/python/</link>
+      <pubDate>Sun, 05 Mar 2023 22:10:14 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rate limiter</title>
+      <link>https://genyrosk.github.io/tags/rate-limiter/</link>
+      <pubDate>Sun, 05 Mar 2023 22:10:14 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/tags/rate-limiter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://genyrosk.github.io/tags/tutorial/</link>
+      <pubDate>Sun, 05 Mar 2023 22:10:14 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>composed functions</title>
+      <link>https://genyrosk.github.io/tags/composed-functions/</link>
+      <pubDate>Sun, 05 Mar 2023 22:09:57 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/tags/composed-functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>decorators</title>
+      <link>https://genyrosk.github.io/tags/decorators/</link>
+      <pubDate>Sun, 05 Mar 2023 22:09:57 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/tags/decorators/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functional programming</title>
+      <link>https://genyrosk.github.io/tags/functional-programming/</link>
+      <pubDate>Sun, 05 Mar 2023 22:09:57 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/tags/functional-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://genyrosk.github.io/tags/programming/</link>
+      <pubDate>Sun, 05 Mar 2023 22:09:57 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prime numbers</title>
+      <link>https://genyrosk.github.io/tags/prime-numbers/</link>
+      <pubDate>Sun, 05 Mar 2023 22:09:50 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/tags/prime-numbers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sql</title>
+      <link>https://genyrosk.github.io/tags/sql/</link>
+      <pubDate>Sun, 05 Mar 2023 22:09:50 +0900</pubDate>
+      
+      <guid>https://genyrosk.github.io/tags/sql/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

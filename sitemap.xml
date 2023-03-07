@@ -3,9 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://genyrosk.github.io/categories/</loc>
+    <lastmod>2023-03-05T22:10:14+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/tags/context-manager/</loc>
+    <lastmod>2023-03-05T22:10:14+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/tags/decorator/</loc>
+    <lastmod>2023-03-05T22:10:14+09:00</lastmod>
   </url><url>
     <loc>https://genyrosk.github.io/</loc>
+    <lastmod>2023-03-05T22:10:14+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/tags/generator/</loc>
+    <lastmod>2023-03-05T22:10:14+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/posts/python-context-managers/</loc>
+    <lastmod>2023-03-05T22:10:14+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/posts/</loc>
+    <lastmod>2023-03-05T22:10:14+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/tags/python/</loc>
+    <lastmod>2023-03-05T22:10:14+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/categories/python/</loc>
+    <lastmod>2023-03-05T22:10:14+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/tags/rate-limiter/</loc>
+    <lastmod>2023-03-05T22:10:14+09:00</lastmod>
   </url><url>
     <loc>https://genyrosk.github.io/tags/</loc>
+    <lastmod>2023-03-05T22:10:14+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/tags/tutorial/</loc>
+    <lastmod>2023-03-05T22:10:14+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/tags/composed-functions/</loc>
+    <lastmod>2023-03-05T22:09:57+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/tags/decorators/</loc>
+    <lastmod>2023-03-05T22:09:57+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/tags/functional-programming/</loc>
+    <lastmod>2023-03-05T22:09:57+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/posts/python-decorators/</loc>
+    <lastmod>2023-03-05T22:09:57+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/tags/programming/</loc>
+    <lastmod>2023-03-05T22:09:57+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/posts/python-generators/</loc>
+    <lastmod>2023-03-05T22:09:50+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/tags/prime-numbers/</loc>
+    <lastmod>2023-03-05T22:09:50+09:00</lastmod>
+  </url><url>
+    <loc>https://genyrosk.github.io/tags/sql/</loc>
+    <lastmod>2023-03-05T22:09:50+09:00</lastmod>
   </url>
 </urlset>
