@@ -13,30 +13,30 @@
     <lastBuildDate>Sun, 05 Mar 2023 22:10:14 +0900</lastBuildDate><atom:link href="https://genyrosk.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learn Python Context Managers</title>
-      <link>https://genyrosk.github.io/posts/python-context-managers/</link>
+      <link>https://genyrosk.github.io/posts/2023-03-05-learn-python-context-managers/</link>
       <pubDate>Sun, 05 Mar 2023 22:10:14 +0900</pubDate>
       
-      <guid>https://genyrosk.github.io/posts/python-context-managers/</guid>
+      <guid>https://genyrosk.github.io/posts/2023-03-05-learn-python-context-managers/</guid>
       <description>Originally posted on 2020-04-04
 A real problem I encountered While learning to use Python Context Managers, I encountered a neat use case for them. At the time I was writing a data pipeline that was heavily querying an API and I would often quickly reach the API quota limits and the script would abruptly quit. My initial solution was to catch the exception and implement a loop that would try again after a time delay.</description>
     </item>
     
     <item>
       <title>Learn Python Decorators</title>
-      <link>https://genyrosk.github.io/posts/python-decorators/</link>
+      <link>https://genyrosk.github.io/posts/2023-03-05-learn-python-decorators/</link>
       <pubDate>Sun, 05 Mar 2023 22:09:57 +0900</pubDate>
       
-      <guid>https://genyrosk.github.io/posts/python-decorators/</guid>
+      <guid>https://genyrosk.github.io/posts/2023-03-05-learn-python-decorators/</guid>
       <description>Originally posted on 2020-04-03
 Whether you are a beginner or an advanced programmer, there are many reasons why you should choose Python for your next coding project. Python is a scripted language with an almost stupidly simple syntax, it is easy to learn and powerful to use. One of the main reasons that I love people love Python is that it offers quite a few specific metaphors (a.k.a. paradigms) for doing certain things.</description>
     </item>
     
     <item>
       <title>Learn Python Generators</title>
-      <link>https://genyrosk.github.io/posts/python-generators/</link>
+      <link>https://genyrosk.github.io/posts/2023-03-05-learn-python-generators/</link>
       <pubDate>Sun, 05 Mar 2023 22:09:50 +0900</pubDate>
       
-      <guid>https://genyrosk.github.io/posts/python-generators/</guid>
+      <guid>https://genyrosk.github.io/posts/2023-03-05-learn-python-generators/</guid>
       <description>Originally posted on 2020-04-02
 There are already many very helpful tutorials on the subject out there. In this piece I wanted to share my own take and experience with python generators that I have gathered while working on production-level Python code. Introduction Whether you are familiar with Python generators or you have only heard a thing or two about them, allow me to summarise the 2 main properties of generator functions:</description>
     </item>

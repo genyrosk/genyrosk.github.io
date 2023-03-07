@@ -13,10 +13,10 @@
     <lastBuildDate>Sun, 05 Mar 2023 22:09:57 +0900</lastBuildDate><atom:link href="https://genyrosk.github.io/tags/composed-functions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learn Python Decorators</title>
-      <link>https://genyrosk.github.io/posts/python-decorators/</link>
+      <link>https://genyrosk.github.io/posts/2023-03-05-learn-python-decorators/</link>
       <pubDate>Sun, 05 Mar 2023 22:09:57 +0900</pubDate>
       
-      <guid>https://genyrosk.github.io/posts/python-decorators/</guid>
+      <guid>https://genyrosk.github.io/posts/2023-03-05-learn-python-decorators/</guid>
       <description>Originally posted on 2020-04-03
 Whether you are a beginner or an advanced programmer, there are many reasons why you should choose Python for your next coding project. Python is a scripted language with an almost stupidly simple syntax, it is easy to learn and powerful to use. One of the main reasons that I love people love Python is that it offers quite a few specific metaphors (a.k.a. paradigms) for doing certain things.</description>
     </item>

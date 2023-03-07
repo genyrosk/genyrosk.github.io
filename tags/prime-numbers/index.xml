@@ -13,10 +13,10 @@
     <lastBuildDate>Sun, 05 Mar 2023 22:09:50 +0900</lastBuildDate><atom:link href="https://genyrosk.github.io/tags/prime-numbers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learn Python Generators</title>
-      <link>https://genyrosk.github.io/posts/python-generators/</link>
+      <link>https://genyrosk.github.io/posts/2023-03-05-learn-python-generators/</link>
       <pubDate>Sun, 05 Mar 2023 22:09:50 +0900</pubDate>
       
-      <guid>https://genyrosk.github.io/posts/python-generators/</guid>
+      <guid>https://genyrosk.github.io/posts/2023-03-05-learn-python-generators/</guid>
       <description>Originally posted on 2020-04-02
 There are already many very helpful tutorials on the subject out there. In this piece I wanted to share my own take and experience with python generators that I have gathered while working on production-level Python code. Introduction Whether you are familiar with Python generators or you have only heard a thing or two about them, allow me to summarise the 2 main properties of generator functions:</description>
     </item>

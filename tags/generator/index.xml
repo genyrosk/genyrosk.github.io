@@ -13,10 +13,10 @@
     <lastBuildDate>Sun, 05 Mar 2023 22:10:14 +0900</lastBuildDate><atom:link href="https://genyrosk.github.io/tags/generator/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learn Python Context Managers</title>
-      <link>https://genyrosk.github.io/posts/python-context-managers/</link>
+      <link>https://genyrosk.github.io/posts/2023-03-05-learn-python-context-managers/</link>
       <pubDate>Sun, 05 Mar 2023 22:10:14 +0900</pubDate>
       
-      <guid>https://genyrosk.github.io/posts/python-context-managers/</guid>
+      <guid>https://genyrosk.github.io/posts/2023-03-05-learn-python-context-managers/</guid>
       <description>Originally posted on 2020-04-04
 A real problem I encountered While learning to use Python Context Managers, I encountered a neat use case for them. At the time I was writing a data pipeline that was heavily querying an API and I would often quickly reach the API quota limits and the script would abruptly quit. My initial solution was to catch the exception and implement a loop that would try again after a time delay.</description>
     </item>
