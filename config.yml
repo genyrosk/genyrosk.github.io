@@ -11,6 +11,9 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+permalinks:
+  posts: /posts/:year-:month-:day-:title/
+
 # googleAnalytics: UA-123-45
 
 minify:
