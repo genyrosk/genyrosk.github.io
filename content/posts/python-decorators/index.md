@@ -1,7 +1,9 @@
 ---
-title: "Python Decorators"
+title: "Learn Python Decorators"
 date: 2023-03-05T22:09:57+09:00
 draft: true
+categories:
+- python
 tags:
 - python
 - decorators
@@ -11,10 +13,9 @@ tags:
 - composed functions
 ---
 
-**Originally posted on .... 2020-04-03**
+*Originally posted on 2020-04-03*
 
-<!-- [[snippet]]
-| Whether you are a beginner or an advanced programmer, there are many reasons why you should choose Python for your next coding project. Python is a scripted language with an almost _stupidly simple_ syntax, it is *easy to learn and powerful to use. One of the main reasons that ~~I love~~ people love Python is that it offers quite a few specific metaphors (a.k.a. paradigms) for doing certain things. One of these things involves **wrapping functions with some repetitively used code**. And so, in your quest to becoming a true Pythonista lie a type function that will help you improve and streamline your code: **decorators**. -->
+Whether you are a beginner or an advanced programmer, there are many reasons why you should choose Python for your next coding project. Python is a scripted language with an almost _stupidly simple_ syntax, it is easy to learn and powerful to use. One of the main reasons that ~~I love~~ people love Python is that it offers quite a few specific metaphors (a.k.a. paradigms) for doing certain things. One of these things involves **wrapping functions with some repetitively used code**. And so, in your quest to becoming a true Pythonista lies a special kind of function that will help you improve and streamline your code: **decorators**.
 
 ## Wrapping a function
 
@@ -68,7 +69,7 @@ print('result: ', result)
     result:  API response
 
 
-Works as expected !
+Really simple and works as expected!
 
 
 ## The Python way
@@ -77,9 +78,9 @@ In Python we strive to do the minimum that gets the job done. That's the essence
 
 However, there are times when keeping things primitive only makes the overall picture increasingly complicated. This is especially true when our application performs lots of repetitive tasks. This is where the magic of Python lies: Python allows you to extend your code in a simple way, without introducing much overhead. For that purpose it offers a number of coding paradigms, one of which we're going to be using today: **decorators**.
 
-#### _Decorators are repeatable bit of code that you want to run **before** and **after** some function execution._
+> *_A **decorator** is a repeatable bit of code that you want to run **before** and **after** some function execution._*
 
-In our example we wrote 3 lines of code within our `call_api` function in order to keep track of how long the api takes to respond. Imagine now that we have multiple different functions that call different API endpoints and we would also like to time them. If we keep doing it the same way as we did earlier, a lot of code would start to get duplicated.
+In our example we wrote 3 lines of code within our `call_api` function in order to keep track of how long the api takes to respond. Imagine now that we have multiple different functions that call different API endpoints and we would also like to time all of them. If we keep doing it the same way as we did earlier, a lot of code would start to get duplicated.
 
 
 ```python
@@ -152,7 +153,7 @@ timed_api_call
 
 Thus, whenever we call `timed_api_call`, we're actually calling the `wrapper` code block within the `time_me` function. This paradigm is often referred to as **function composition**.
 
-Ins't this just plain Awesome ?! We can now wrap this timer around any other function and print out the time it took to execute just as well as get the result back.
+Ins't this just plain awesome?! We can now wrap this timer around any function to print out the time it took to execute and also get the result from the function execution.
 
 Nevertheless, this introduces another, albeit minor, problem: long and convoluted lines of code. If we start to chain functions one after another, our code will become increasingly hard to read.
 
@@ -163,24 +164,25 @@ Nevertheless, this introduces another, albeit minor, problem: long and convolute
 first_function(second_function(third_function(...)))
 ```
 
+In addition, we still need to explicitly perform the function composition by writing `timed_api_call = time_me(call_api)`. There's got to be a better way...
 
-In addition, we still need to explicitly perform the function composition by writing `timed_api_call = time_me(call_api)`. There's gotta be a better way smh...
 
 ## Decorator syntax
 
-Enter the decorator syntactic sugar. With the Python decorator syntax, we can set a function A to wrap around another function B simply by adding an `@` (function A would then be called a decorator) in front of it before function B's definition. Like so:
+Enter the decorator syntactic sugar. With this special syntax, we can wrap/decorate a function with another function (that we call a decorator) using `@` followed by the decorator symbol above the function definition. Like so:
 
 
 ```python
-@function_A
-def function_B():
+@decorator_func
+def function_being_wrapped():
     pass
 ```
 
+You can now perhaps see why the name "decorator" was chosen. We are decorating our function with it.  
 
-Every time we call `function_B`, `function_A` is executed beforehand. A decorator is thus just that: a nice-looking wrapper function.
+Every time we call `function_being_wrapped`, `decorator_func` is executed beforehand. A decorator is just that: an ergonomic wrapper function.
 
-There no more extra code we need to write, simply **decorate** our `call_api` function with the `time_me` decorator:
+There is no more extra code we need to write, we simply **decorate** our `call_api` function with the `time_me` decorator:
 
 
 ```python
@@ -197,7 +199,8 @@ print('result: ', result)
     result:  API response
 
 
-It just works !
+It just works!
+
 
 ### How to deal with arguments
 
@@ -237,9 +240,9 @@ print('result: ', result)
     result:  API response
 
 
-## Decorators that accept arguments
+### Decorators that accept arguments
 
-"Can we pass arguments to the decorator itself ?" you might ask. The answer is yes ! But we would have to do some additional modifications to allow our decorator to accept arguments. Let's say you would want this function to sometimes print seconds, while other times you would rather have it print milliseconds.
+"Can we pass arguments to the decorator itself?" you might ask. The answer is yes! But we would have to do some additional modifications to allow our decorator to accept arguments. Let's say you would want this function to sometimes print seconds, while other times you would rather have it print milliseconds.
 
 
 ```python
@@ -282,7 +285,7 @@ call_api()
     'API response'
 
 
-Success !
+Success!
 
 Don't worry too much about the `@wraps` decorator: it's a special Python function that renames the wrapper name into the function that it's wrapping.
 
@@ -306,9 +309,9 @@ print(call_api)
 
 It helps with debugging. Keep this in mind when you're writing open source code or if you're expecting other people to work with your functions.  
 
-### One last thing
+### How to write a decorator that works with or without arguments
 
-With a little bit of care, you can also define decorators that can be used both with and without arguments. Most likely, you don’t need this, but it is nice to have the flexibility.
+With a little bit of care, you can also define decorators that can be used both with and without arguments. Most likely, you don’t need this, but sometimes it is nice to have the flexibility.
 
 
 ```python{19-24}
@@ -429,5 +432,6 @@ milliseconds: 0.0021457672119140625
 result:  300
 ```
 
-Thank you for reading ! 
+
+I hope this helped. Thank you for reading! 
 

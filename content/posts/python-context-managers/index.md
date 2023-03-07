@@ -1,7 +1,9 @@
 ---
-title: "Python Context Managers"
+title: "Learn Python Context Managers"
 date: 2023-03-05T22:10:14+09:00
 draft: true
+categories:
+- python
 tags:
 - python
 - context manager
@@ -9,29 +11,28 @@ tags:
 - generator
 - rate limiter
 - tutorial
+showSummary: false
 ---
 
-**Originally posted on ... 2020-04-04**
+*Originally posted on 2020-04-04*
 
 ## A real problem I encountered
 
-<!-- [[snippet]]
-| While learning to use Python Context Managers, I encountered a neat use case for them. At the time I was writing a data pipeline that was heavily querying an API and I would often quickly reach the **API quota limits** and the script would abruptly quit. My initial solution was to catch the exception and implement a loop that would try again after a time delay. It was a quick and dirty solution with a lot of boilerplate code, but it worked as a first approach. Later I found myself in the same problem when querying a different API and I realised that a more structured approach was necessary. 
+While learning to use Python Context Managers, I encountered a neat use case for them. At the time I was writing a data pipeline that was heavily querying an API and I would often quickly reach the **API quota limits** and the script would abruptly quit. My initial solution was to catch the exception and implement a loop that would try again after a time delay. It was a quick and dirty solution with a lot of boilerplate code, but it worked as a first approach. Later I found myself in the same problem when querying a different API and I realised that a more structured approach was necessary. 
 
-Some time later I found out the existence of the [ratelimiter](https://github.com/RazerM/ratelimiter) package, and to my surprise: it also used context managers and the code looked very similar ! In addition, the package features a very neat usage of the decorator syntax and implements both synchronous and asynchronous versions.  
+Some time later I found out the existence of the [ratelimiter](https://github.com/RazerM/ratelimiter) package, and to my surprise: it also used context managers and the code looked very similar! In addition, the package features a very neat usage of the decorator syntax and implements both synchronous and asynchronous versions.  
 
-[[snippet]]
-| In this article we are going to go through the **basics of the context manager functionality**, and then see it in action when implemented into a rate limiter class.  -->
+In this article we are going to go through the **basics of the context manager functionality**, and then see it in action when implemented into a rate limiter class. 
 
 
 ## The purpose of context managers 
 
 The purpose of a context manager is to encapsulate a sequence of "setup" and "teardown" steps into a neat block of code. Any code that runs within that block runs within the context of a particular resource that is created in the process. In the background, a context manager implements this process for you. This process usually involves some sort of creation followed by deletion, an opening followed by closing (of a connection, for example), a building step followed by a breaking step (more metaphors are welcome).  
 
-Sounds confusing ? Don't worry, let's clear it up with some examples. 
+Sounds confusing? Don't worry, let's clear it up with some examples. 
 
 
-### Opening a file 
+### Example: Opening a file 
 
 To open a file in Python you would usually write the follwing: 
 
@@ -68,7 +69,7 @@ With a context manmager, the user no longer has to explicitely specify the closi
 
 ## Building a context manager ... 
 
-## ... as a class
+### ... as a class
 
 A context manager can be implemented with special class underscore methods, namely `__enter__` and `__exit__`. 
 
@@ -273,7 +274,7 @@ call [9]: 200 OK
 
 ### Improved version: as a decorator 
 
-The main limitation of the simple functional implementation above is that we have to provide to it the number of times that we want to query the API in order to be able to then keep a memory of the state inside the function. What if we don't know how many times we need to call the API ? What if these calls come from different places ? 
+The main limitation of the simple functional implementation above is that we have to provide to it the number of times that we want to query the API in order to be able to then keep a memory of the state inside the function. What if we don't know how many times we need to call the API? What if these calls come from different places? 
 
 We need to keep track of the calls that we're making dynamically, i.e. the state needs to live outside of the function making the calls: a stateful decorator. 
 
@@ -471,4 +472,4 @@ second [1.93] call [9]: 200 OK
 
 Same as before.
 
-Thank you for reading ! 
+Thank you for reading! 

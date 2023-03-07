@@ -21,10 +21,10 @@ params:
   # env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: genyrosk's blog
   description: "Evgeny Roskach - Blog"
-  keywords: [Blog, Portfolio, Programming, Software, Engineering, Artificial Intelligence, AI, ML, Python, Rust, Evgeny Roskach]
+  keywords: [Blog, Portfolio, Programming, Software, Engineering, Artificial Intelligence, AI, ML, Python, Typescript, Nodejs, Rust, Evgeny Roskach]
   author: Evgeny Roskach
   # author: ["Me", "You"] # multiple authors
-  # images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["https://avatars.githubusercontent.com/u/9571838?v4"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -32,9 +32,9 @@ params:
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: false
-  ShowWordCount: true
+  ShowWordCount: false
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
@@ -42,32 +42,32 @@ params:
   comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: false
+  showtoc: true
   tocopen: false
 
-  # assets:
-  #   # disableHLJS: true # to disable highlight.js
-  #   # disableFingerprinting: true
-  #   favicon: "<link / abs url>"
-  #   favicon16x16: "<link / abs url>"
-  #   favicon32x32: "<link / abs url>"
-  #   apple_touch_icon: "<link / abs url>"
-  #   safari_pinned_tab: "<link / abs url>"
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon16x16.png"
+    favicon32x32: "/favicon32x32.png"
+    apple_touch_icon: "/apple_touch_icon.png"
+    # safari_pinned_tab: ""
 
   label:
-    text: "Home"
-    icon: /apple-touch-icon.png
+    text: "Ev's stdout"
+    icon: "https://avatars.githubusercontent.com/u/9571838?v4"
     iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: Evgeny's blog
+    title: Evgeny Roskach
     subtitle: "This is subtitle"
-    imageUrl: "<img location>"
+    imageUrl: "https://avatars.githubusercontent.com/u/9571838?v4"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: "pizza me"
     buttons:
       - name: Posts
         url: posts
@@ -76,14 +76,18 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog - description goes here
+    Title: "\U0001F44B Welcome to Ev's stdout"
+    Content: Hi, This is Evgeny. I'm a software engineer with a background in ML who likes to build webapps. In this blog I share articles about programming and my coding experience. My go to languages are Python, Typescript and Rust.   
 
   socialIcons:
     - name: github
       url: "https://github.com/genyrosk"
     - name: linkedin
       url: "https://linkedin.com/in/eroskach"
+    - name: email
+      url: mailto:e.roskach@gmail.com
+    # - name: ycombinator
+    #   url: ycombinator.com
 
   # analytics:
   #   google:
@@ -97,7 +101,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/genyrosk/genyrosk.github.io/content"
+    URL: "https://github.com/genyrosk/genyrosk.github.io/tree/main/content/"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 

@@ -1,7 +1,9 @@
 ---
-title: "Python Generators"
+title: "Learn Python Generators"
 date: 2023-03-05T22:09:50+09:00
 draft: true
+categories:
+- python
 tags:
 - python
 - decorators
@@ -11,19 +13,18 @@ tags:
 - sql
 ---
 
-**Originally posted on .... 2020-04-02**
+*Originally posted on 2020-04-02*
 
 #### __*There are already many very helpful tutorials on the subject out there. In this piece I wanted to share my own take and experience with python generators that I have gathered while working on production-level Python code.*__
 
-<!-- # Intro -->
+## Introduction
 
-<!-- [[snippet]]
-| Whether you are familiar with Python generators or you have only heard a thing or two about them, allow me to summarise the 2 main properties of generator functions: 
-| - generators are **stateful** functions. 
-| - generators **delay computations until necessary**. 
-|
-| As you are about to see, these properties make generators incredibly useful. 
-| -->
+Whether you are familiar with Python generators or you have only heard a thing or two about them, allow me to summarise the 2 main properties of generator functions: 
+- generators are **stateful** functions. 
+- generators **delay computations until necessary**. 
+
+As you are about to see, these properties make generators incredibly useful. 
+
 
 ## Generator functions vs generator instances
 
@@ -66,13 +67,13 @@ From now on we'll refer to the generator instance simply as a *generator*. Albei
 
 At this point, you might be thinking:
 
-### _"Wait... but if inspecting the generator returns this address that stores the computation, how do I access the value that it's supposed to return ?"_
+### _"Wait... but if inspecting the generator returns this address that stores the computation, how do I access the value that it's supposed to return?"_
 
 This is where the `yield`/`next` pair truly kicks in. 
 
 `yield` is a statment, i.e. a syntactic expression, that specifies the value that a generator returns, or, more precisely, the value that the generator __yields__, while `next` is a special Python function that summons the generator's inner code to execute until it encounters a `yield` statment, at which point it simply returns (yields) the specified value. 
     
-The reason why the generator *yields* instead of *returning*, is because a function return implies that the function has finished executing, that there's nothing left for that function to do. A generator can *yield* as many values as a programmer desires. It can *yield* values indefinetely in fact. When the `return` expression is used in a generator, the generator exits and computation is finished. 
+The reason why the generator *yields* instead of *returning*, is because a function return implies that the function has finished executing, that there's nothing left for that function to do. A generator can *yield* as many values as a programmer desires. In fact, as we'll see later, you can make a generator *yield* values indefinetely. When the `return` expression is used in a generator, the generator exits and computation is finished. 
 
 Following our class analogy, you can think of `next` as a class method. 
 
@@ -95,11 +96,11 @@ Let's pass the generator instance to the special `next` function.
 0
 ```
 
-Awesome ! We got a value out of our generator ! So what just happened ? 
+Awesome! We got a value out of our generator! So what just happened? 
 
 The generator started on line 1, and assigned `0` to the variable `a`. Then it executed the `yield a` statement and yielded the value of `a`. 
 
-### _"So... is this it then ?"_
+### _"So... is this it then?"_
 
 Well, the generator is now **paused**: it stopped at the yield statement, and is waiting for us to call it again to resume its computation. So let's do just that:
 
@@ -108,7 +109,7 @@ Well, the generator is now **paused**: it stopped at the yield statement, and is
 10
 ```
 
-We got the new value of `a` out ! Let's try one more time:
+We got the new value of `a` out! Let's try one more time:
 
 ``` python
 >>> next(generator_inst)
@@ -147,7 +148,7 @@ StopIteration                             Traceback (most recent call last)
 StopIteration:
 ```
 
-You might be shaking your head and wondering why has it been designed this way. Can't the generator signal that it finished in some other way ? Well, not really, not in Python at least. 
+You might be shaking your head and wondering why has it been designed this way. Can't the generator signal that it finished in some other way? Well, not really, not in Python at least. 
 
 But this exception is actually very useful, it can be easily captured and will thus prevent unnecessary computation. 
 
@@ -170,7 +171,7 @@ print('done')
 done
 ```
 
-But the Python way would be do it in a for loop. Why ? Because in additionto calling `next` on the generator for you, Python `for` loops automatically check for the `StopIteration` exception for you and will exit the loop context as soon as this exception is raised. 
+But the Python way would be do it in a for loop. Why? Because in additionto calling `next` on the generator for you, Python `for` loops automatically check for the `StopIteration` exception for you and will exit the loop context as soon as this exception is raised. 
 
 
 ```python
@@ -254,7 +255,7 @@ You might be wondering why we are calling the `next` function in the beggining. 
 - it first returns the value that it's yielding and **pauses**
 - it then assigns the value that it's passed with `.send(value)` and the generator continues running until it encounters the next `yield` statement
 
-So can you retrieve and send values at the same time ? Of course ! In the following example we will print the stateful variables inside of the generator to better understand what's going on:
+So can you retrieve and send values at the same time? Of course! In the following example we will print the stateful variables inside of the generator to better understand what's going on:
 
 ```python
 def my_generator():
@@ -359,7 +360,7 @@ for value in generate_primes(50):
 
 ### Animate a plot as prime numbers are being generated
 
-Let's try something a bit more fancy. As the prime numbers are being computed, we plot them in polar coordinates on a graph. The prime number's value **p** will be both the distance from the origin **r** and the angle **θ** (in radians). The cartesian coordinates are thus $(p%20cos(p),%20p%20sin(p))$.  <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+Let's try something a bit more fancy. As the prime numbers are being computed, we plot them in polar coordinates on a graph. The prime number's value **p** will be both the distance from the origin **r** and the angle **θ** (in radians). The cartesian coordinates are thus $(p \ cos(p), p \ sin(p))$, ie $e^{i\pi}=-1$.
 
 ```python
 import math
@@ -418,9 +419,11 @@ plt.show()
 
 Which should generate the following plot:
 
-<img src="./prime_numbers_spiral_2.gif" width="550" style="display: block; margin: 40px auto" />
+<!--![Prime Numbers Spiral](images/prime_numbers_spiral_2.gif) -->
+{{< figure src="images/prime_numbers_spiral_2.gif" title="Prime Numbers Spiral"  width="100%" >}}
 
-Do you notice how the prime number form these spirals from the origin ? This plot illustrates, as Grant from [3blue1brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw/featured) has put it: 
+
+Do you notice how the prime number form these spirals from the origin? This plot illustrates, as Grant from [3blue1brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw/featured) has put it: 
 
 > How pretty but pointless patterns in polar plots of primes prompt pretty important ponderings on properties of those primes. 
 
@@ -458,7 +461,7 @@ AND
 AND
 ```
 
-And that's it !
+And that's it!
 
 If you want to go to the next level of Pythonista, try using the `itertools` library provided out of the box by Python. 
 
@@ -477,4 +480,4 @@ AND
 AND
 ```
 
-Thank you for reading !
+Thank you for reading!
