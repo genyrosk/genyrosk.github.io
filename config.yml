@@ -92,9 +92,9 @@ params:
     # - name: ycombinator
     #   url: ycombinator.com
 
-  # analytics:
-  #   google:
-  #     SiteVerificationTag: "XYZabc"
+  analytics:
+    google:
+      SiteVerificationTag: "G-9PLC05TT7N"
   #   bing:
   #     SiteVerificationTag: "XYZabc"
 
