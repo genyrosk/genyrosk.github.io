@@ -21,7 +21,7 @@ minify:
   minifyOutput: true
 
 params:
-  # env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: genyrosk's blog
   description: "Evgeny Roskach - Blog"
   keywords: [Blog, Portfolio, Programming, Software, Engineering, Artificial Intelligence, AI, ML, Python, Typescript, Nodejs, Rust, Evgeny Roskach]
